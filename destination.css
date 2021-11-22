@@ -1,0 +1,82 @@
+body {
+  background-image: url("./assets/destination/background-destination-mobile.jpg");
+}
+
+.num {
+  color: hsl(var(--clr-white) / 0.7);
+  margin-right: 1rem;
+}
+.title p {
+  font-size: 1.3rem;
+}
+
+.img-container img {
+  width: 20rem;
+  height: 20rem;
+}
+
+li {
+  font-weight: 300;
+  padding: 0;
+  margin: 1rem;
+  padding-bottom: 0.7rem;
+  cursor: pointer;
+  color: hsl(var(--clr-light));
+}
+li.active {
+  color: hsl(var(--clr-white));
+  border-bottom: 3px solid hsl(var(--clr-white));
+}
+
+.about-planet {
+  color: hsl(var(--clr-white));
+}
+.about-planet h2 {
+  font-size: 4rem;
+}
+.about-planet p {
+  color: hsl(var(--clr-light));
+}
+
+.distance {
+  border-top: 1px solid hsl(var(--clr-light) / 0.5);
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.distance p {
+  color: hsl(var(--clr-light));
+}
+.distance h3 {
+  color: hsl(var(--clr-white));
+}
+.distance div {
+  margin-top: 2rem;
+}
+
+/* media query */
+/* md */
+@media (min-width: 768px) {
+  body {
+    background-image: url("./assets/destination/background-destination-tablet.jpg");
+  }
+  .title p {
+    text-align: left !important;
+  }
+  .about-planet p {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  body {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

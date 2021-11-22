@@ -1,0 +1,125 @@
+body {
+  background-image: url("./assets/technology/background-technology-mobile.jpg");
+}
+
+.title span {
+  font-weight: 600;
+  color: hsl(var(--clr-white) / 0.6);
+}
+.title {
+  color: hsl(var(--clr-white));
+  font-size: 1.2rem;
+}
+.img {
+  height: 200px;
+  background-image: url("./assets/technology/image-launch-vehicle-landscape.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tech-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.tech-nav span {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: 50%;
+  color: hsl(var(--clr-white));
+  border: 1px solid hsl(var(--clr-light));
+  user-select: none;
+  cursor: pointer;
+  margin: 2rem 1rem;
+}
+.tech-nav span:hover {
+  background-color: hsl(var(--clr-white) / 0.6);
+  color: hsl(var(--clr-dark));
+}
+
+.tech-nav span.active {
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+}
+.destription {
+  color: hsl(var(--clr-light));
+}
+
+.destription h3 {
+  color: hsl(var(--clr-white));
+  font-size: 1.6rem;
+}
+.destription h5 {
+  font-size: 1.2rem;
+}
+.destription p {
+  margin-top: 3rem;
+  padding: 0 2rem;
+  text-indent: 3rem;
+}
+
+/* media query */
+/* md */
+@media (min-width: 768px) {
+  body {
+    background-image: url("./assets/technology/background-technology-tablet.jpg");
+  }
+  .title {
+    text-align: left !important;
+    padding-left: 1.5rem;
+  }
+  .img {
+    height: 300px;
+  }
+  .destription p {
+    padding: 0 10rem;
+  }
+  .destription h3 {
+    font-size: 2rem;
+  }
+  .destription h5 {
+    font-size: 1rem;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  body {
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+  }
+  main {
+    padding-bottom: 3rem;
+  }
+  .title {
+    padding-left: 6rem;
+  }
+  .tech-nav {
+    order: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .destription {
+    order: 1;
+    text-align: left !important;
+    padding: 0 3rem;
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .destription p {
+    padding: 0;
+    width: 100%;
+    margin-top: 1rem;
+    text-indent: 0;
+  }
+
+  .img {
+    height: 530px;
+    order: 2;
+    background-image: url("./assets/technology/image-launch-vehicle-portrait.jpg");
+  }
+}
