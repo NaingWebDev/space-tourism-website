@@ -34,8 +34,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
   background-color: hsl(var(--clr-dark));
+}
+body {
+  overflow-x: hidden;
 }
 
 img {
